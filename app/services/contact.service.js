@@ -21,7 +21,7 @@ class ContactService {
     }
 
     async createContact(payload) {
-        console.log(payload);
+        // console.log(payload);
         const contact = this.extractContactData(payload);
         const result = await this.Contact.findOneAndUpdate(
             { phone: contact.phone },
